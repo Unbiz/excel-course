@@ -5,10 +5,11 @@
     "browser": true,
     "node": true
   },
-  "reles": {
-
+  "rules": {
+    "require-jsdoc": "off"
   },
   "extends": [
-    "eslist:recommended", "google"
+    "eslint:recommended",
+    "google"
   ]
 }

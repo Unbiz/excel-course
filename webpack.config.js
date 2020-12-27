@@ -19,11 +19,14 @@ const jsLoaders = () => {
       }
     }
   ];
+
+  if (isDev) {
+    loaders.push('eslint-loader');
+  }
+
+  return loaders;
 };
 
-if (isDev) {
-  loaders.push('eslint-loader');
-}
 
 console.log('IS PROD', isProd);
 console.log('IS DEV', isDev);
