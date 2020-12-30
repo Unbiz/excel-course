@@ -6,7 +6,12 @@
     "node": true
   },
   "rules": {
-    "require-jsdoc": "off"
+    "require-jsdoc": "off",
+    "linebreak-style": 0,
+    "no-trailing-spaces": "off",
+    "eol-last": "off",
+    "arrow-parens":"off",
+    "operator-linebreak":"off"
   },
   "extends": [
     "eslint:recommended",
