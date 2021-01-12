@@ -76,7 +76,7 @@
     background:$primary-color;
 
     &:hover {
-      opacity: 1;
+      opacity: 1!important;
       cursor: col-resize;
     }
   }
@@ -91,7 +91,7 @@
     background:$primary-color;
 
     &:hover {
-      opacity: 1;
+      opacity: 1!important;
       cursor: row-resize;
     }
   }

@@ -1,8 +1,8 @@
 class Dom {
   constructor(selector) {
     this.$el = typeof selector === 'string'
-    ? document.querySelector(selector)
-    : selector;
+      ? document.querySelector(selector)
+      : selector;
   }
 
   html(html) {
@@ -53,6 +53,12 @@ class Dom {
 
   findAll(selector) {
     return this.$el.querySelectorAll(selector);
+  }
+
+  css(styles = {}) {
+    Object.keys(styles).forEach(style => {
+      this.$el.style[style] = styles[style];
+    });
   }
 }
 
